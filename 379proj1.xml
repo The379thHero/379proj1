@@ -22,13 +22,33 @@
                   <block type="logic_operation" id="485" inline="true">
                     <field name="OP">LAND</field>
                     <value name="A">
-                      <block type="sensor_object" id="492">
-                        <field name="OBJECT">LEFTFRONT</field>
+                      <block type="logic_compare" id="516" inline="true">
+                        <field name="OP">LTE</field>
+                        <value name="A">
+                          <block type="sensor_object" id="492">
+                            <field name="OBJECT">LEFTFRONT</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="530">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="sensor_object" id="499">
-                        <field name="OBJECT">RIGHTFRONT</field>
+                      <block type="logic_compare" id="523" inline="true">
+                        <field name="OP">LTE</field>
+                        <value name="A">
+                          <block type="sensor_object" id="499">
+                            <field name="OBJECT">RIGHTFRONT</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="537">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                   </block>
