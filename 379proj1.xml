@@ -16,46 +16,28 @@
               </block>
             </value>
             <statement name="DO">
-              <block type="controls_if" id="270" inline="false">
-                <mutation elseif="1" else="1"></mutation>
+              <block type="controls_if" id="455" inline="false">
+                <mutation else="1"></mutation>
                 <value name="IF0">
-                  <block type="logic_compare" id="285" inline="true">
-                    <field name="OP">LTE</field>
+                  <block type="logic_operation" id="485" inline="true">
+                    <field name="OP">LAND</field>
                     <value name="A">
-                      <block type="sensor_object" id="300">
+                      <block type="sensor_object" id="492">
                         <field name="OBJECT">LEFTFRONT</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="307">
-                        <field name="NUM">20</field>
+                      <block type="sensor_object" id="499">
+                        <field name="OBJECT">RIGHTFRONT</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_reverse" id="317"></block>
-                </statement>
-                <value name="IF1">
-                  <block type="logic_compare" id="324" inline="true">
-                    <field name="OP">LTE</field>
-                    <value name="A">
-                      <block type="sensor_object" id="344">
-                        <field name="OBJECT">RIGHTFRONT</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="math_number" id="351">
-                        <field name="NUM">20</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <statement name="DO1">
-                  <block type="movement_reverse" id="361"></block>
+                  <block type="movement_left" id="509"></block>
                 </statement>
                 <statement name="ELSE">
-                  <block type="movement_forward" id="371"></block>
+                  <block type="movement_forward" id="472"></block>
                 </statement>
               </block>
             </statement>
